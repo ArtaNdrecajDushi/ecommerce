@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.background-image {
+  background-color: rgba(216, 229, 233, 0.931);
+  background-image: url("./assets/backgroundImage.jpg");
+  height: 74vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.logo {
+  margin-right: 700px;
+  width: 100px;
+  height: 100px;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(63, 65, 63);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 15%;
+  color: whitesmoke;
+}
+form input {
+  width: 20%;
+  height: 40px;
+  padding: 5px;
+  font-size: 1.2rem;
+  color: rgb(71, 68, 68);
+}
+
+header form input::placeholder {
+  color: rgb(92, 86, 86);
+}
+.login {
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 1.2rem;
+  background-color: rgb(131, 123, 123);
+  color: whitesmoke;
+}
+
+header a {
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+header nav {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  text-decoration: none;
+}
+nav ul a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+header nav ul a li {
+  list-style: none;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+main button {
+  width: 100px;
+  height: 30px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 50px;
+}
+
+.pasta-structure {
+  background-color: rgba(255, 255, 255, 0.246);
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px white;
+}
+
+.wine-structure {
+  color: whitesmoke;
+  text-align: justify;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.246);
+  padding: 15px;
+}
+
+.products li {
+  list-style: none;
+  
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+}
+
+section,
+.details {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section h1 {
+  font-size: 3rem;
+  color: darkred;
+}
+section li {
+  list-style: none;
+}
+section a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.details p {
+  color: darkred;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+
+.about {
+  width: 60%;
+  background-color: rgba(245, 245, 245, 0.15);
+  padding: 20px;
+}
+
+.about p {
+  color: rgb(245, 245, 245);
+}
+
+.about button {
+  margin-top: 15px;
+  margin-left: 30%;
+  width: 20%;
+  border: 3px solid black;
+  padding: 10px;
+}
+
+.about button:hover {
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer .copy {
+  margin-bottom: 15px;
+  margin-right: 10px;
+  color: black;
+}
+
+footer p {
+  margin-right: 40px;
+  color: black;
+}
+
+.icons {
+  margin-right: 50px;
+  justify-content: space-between; /*not working */
+}
+.test {
+  font-size: 2rem;
+}
+
+.wine img {
+  display: none;
+}
+/*share buttons*/
+.share {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  transition: width 0.5s;
+  margin: 3rem;
+  background: #ddd;
+}
+
+.share i {
+  text-align: center;
+  max-width: 1rem;
+}
+
+.share__button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  transition: margin-left 0.5s, transform 0.7s, opacity 0.3s,
+    background-color 0.4s;
+  padding: 0.5rem;
+  opacity: 1;
+}
+
+.share__button i,
+.share__parent i {
+  color: #ffffff;
+  margin: auto;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.share__parent {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  padding: 0.5rem;
+  background-color: #549c67;
+  z-index: 5;
+  box-shadow: 0px 0px 1px 2px #549c67;
+}
+
+.share__facebook {
+  transform: rotate(-90deg);
+  background-color: #335fb8;
+}
+
+.share__twitter {
+  transform: rotate(-180deg);
+  background-color: #639cba;
+}
+
+.share__linkedin {
+  transform: rotate(-270deg);
+  background-color: #0077b5;
+}
+
+.share__reddit {
+  transform: rotate(-270deg);
+  background-color: #ff4500;
+}
+
+.share__clipboard {
+  transform: rotate(-270deg);
+  background-color: #444;
+}
+
+/* hover states */
+
+.share:hover {
+  width: 20rem;
+}
+.share:hover .share__facebook {
+  margin-left: 3.5rem;
+}
+.share:hover .share__twitter {
+  margin-left: 7rem;
+}
+.share:hover .share__linkedin {
+  margin-left: 10.5rem;
+}
+.share:hover .share__reddit {
+  margin-left: 14rem;
+}
+.share:hover .share__clipboard {
+  margin-left: 17.5rem;
+}
+.share:hover .share__button {
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+/*share buttons*/
+
+.logout-page {
+  text-align: center;
+  padding-top: 30vh;
+}
+
+.logout-page h3 {
+  font-size: 2rem;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+.logout-page {
+  text-decoration: none;
+  color: white;
+}
+
+.select {
+  text-decoration: none;
+}
+
+.logout-page h3 {
+  text-transform: uppercase;
+}
+
+.link-color {
+  color: whitesmoke;
+  text-decoration: none;
+  
+  
+}
+.link-color:hover {
+  color: whitesmoke;
+  text-decoration: underline;
+  font-size: 20px;
+  
+}
+
+.logout-button {
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.logout-button:hover {
+  letter-spacing: 8px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.choose-category{
+  color: whitesmoke;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+ .menu{
+display: flex;
+gap:20px
+} 
+
+.pasta-menu{
+  background-image: url(./assets/pasta.jpg);
+  width:250px;
+  height: 250px;
+  background-size: cover;
+}
+
+.wine-menu{
+  background-image: url(./assets/wine.jpg);
+  width:250px;
+  height: 250px;
+  background-size: cover;
+}
+
+.cart-page {
+  color: whitesmoke
+}
+
+.home{
+  text-decoration: none;
+}
+
+.products-background-image {
+  background-image: url("./assets/backgroundImage.jpg"); 
+ opacity: 0.15;
+}
