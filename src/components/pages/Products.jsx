@@ -35,7 +35,7 @@ const Products = () => {
           <button className="wine-add-button" onClick={() => addToCart(item)}>Add to cart</button>
         </li>
       );
-    }
+    } return
   });
   return (
     <section className="background-image products-background-image">

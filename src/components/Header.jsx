@@ -25,17 +25,17 @@ const Header = () => {
   <div className="share__parent">
   <BsFillShareFill />
   </div>
-  <a href="#">
+  <a href="https://youtube.com">
     <div className="share__button share__facebook">
     <BsInstagram />
     </div>
   </a>
-  <a href="#">
+  <a href="https://youtube.com">
     <div className="share__button share__linkedin">
     <AiFillFacebook />
     </div>
   </a>
-  <a href="#">
+  <a href="https://youtube.com">
     <div className="share__button share__twitter">
     <FaTripadvisor />
     </div>
