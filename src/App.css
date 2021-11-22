@@ -114,7 +114,7 @@ main button {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 50px;
   margin: 50px;
 }
@@ -123,10 +123,11 @@ main button {
   background-color: rgba(255, 255, 255, 0.246);
   padding: 15px;
   border-radius: 25px;
-  box-shadow: 10px 10px 10px white;
+  /* box-shadow: 10px 10px 10px white; */
 }
 
 .wine-structure {
+  position: relative;
   color: whitesmoke;
   text-align: justify;
   gap: 20px;
@@ -136,7 +137,6 @@ main button {
 
 .products li {
   list-style: none;
-  
 }
 
 .product-image {
@@ -245,7 +245,7 @@ footer p {
   border-radius: 50%;
   position: absolute;
   transition: margin-left 0.5s, transform 0.7s, opacity 0.3s,
-    background-color 0.4s;
+  background-color 0.4s;
   padding: 0.5rem;
   opacity: 1;
 }
@@ -348,14 +348,11 @@ footer p {
 .link-color {
   color: whitesmoke;
   text-decoration: none;
-  
-  
 }
 .link-color:hover {
   color: whitesmoke;
   text-decoration: underline;
   font-size: 20px;
-  
 }
 
 .logout-button {
@@ -370,39 +367,220 @@ footer p {
   border-bottom: 2px solid black;
 }
 
-.choose-category{
+.choose-category {
   color: whitesmoke;
   padding-top: 30px;
   padding-bottom: 20px;
 }
- .menu{
-display: flex;
-gap:20px
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.pasta-menu {
+  background-image: url(./assets/pasta.jpg);
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+}
+
+.wine-menu {
+  background-image: url(./assets/wine.jpg);
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+}
+
+.details-page{
+  padding-left:0px;
+  padding-top:10px;
+  width:60%;
+  background-color: rgba(245, 245, 245, 0.15);
+}
+
+.details-page p{
+  color: whitesmoke;
+}
+ .product-detail-page{
+  background-image: url(./assets/backgroundImage.jpg);
+  background-size: cover;
 } 
 
-.pasta-menu{
-  background-image: url(./assets/pasta.jpg);
-  width:250px;
-  height: 250px;
-  background-size: cover;
+.product-detail-image{
+  color:whitesmoke;
+  margin-right:10px;
+  width: 200px;
+  height: 200px;
 }
 
-.wine-menu{
-  background-image: url(./assets/wine.jpg);
-  width:250px;
-  height: 250px;
-  background-size: cover;
+.details-page {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px;
 }
+.details-aside{
+  width:50%;
+  background-color: rgba(245, 245, 245, 0.123);
+}
+.details-page .details-aside {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.details-page h4 {
+  font-size: 1.4rem;
+  color: cornsilk;
+}
+
+.details-page .details-aside p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: whitesmoke;
+}
+
+.details-page .details-aside h2 {
+  margin-top: 10px;
+  color: white;
+}
+
+ .details-button {
+  position: absolute;
+  bottom: 450px;
+  left: 20px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: #151323;
+  background-color: cornsilk;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+} 
+
+.details-button2 {
+  position: absolute;
+  bottom: 400px;
+  left: 20px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: #151323;
+  background-color: cornsilk;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+} 
 
 .cart-page {
-  color: whitesmoke
+  color: whitesmoke;
+  padding: 20px;
 }
 
-.home{
+.home {
   text-decoration: none;
 }
 
 .products-background-image {
-  background-image: url("./assets/backgroundImage.jpg"); 
- opacity: 0.15;
+  background-image: url("./assets/backgroundImage.jpg");
 }
+
+
+.cart-page {
+  
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px;
+  flex-grow: 1;
+}
+
+.cart-page .cart-line {
+  margin-top:15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.cart-page .cart-line img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.cart-text {
+  display: flex;
+  width: 50%;
+}
+
+.cart-page .cart-line h5 {
+  margin-left: 10px;
+  font-size: 1.3rem;
+  color: cornsilk;
+}
+
+.cart-page .cart-line p {
+  font-size: 1.1rem;
+  margin-left: 10px;
+  color: cornsilk;
+}
+
+.cart-page .cart-line span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.cart-page .cart-line h4 {
+  margin-top: -4px;
+  margin-left: 20px;
+  margin-right: 80px;
+  font-size: 1.4rem;
+  color: whitesmoke;
+}
+
+.cart-page .cart-line button {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px;
+  background-color: cornsilk;
+  color: #151323;
+  cursor: pointer;
+}
+
+.cart-page .cart-line .remove-button {
+  width: 200px;
+  height: 40px;
+  color: #151323;
+  background-color: whitesmoke;
+}
+
+.place-order{
+  width:100px;
+}
+
+.wine-add-button{
+  position: absolute;
+  bottom: 0;
+}
+
+.dropdown{
+  margin-left: 10px;
+}
+
+

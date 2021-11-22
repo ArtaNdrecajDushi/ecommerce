@@ -1,13 +1,11 @@
 import {useContext} from 'react'
-import {useNavigate, Link} from "react-router-dom"
-
+import {Link} from "react-router-dom"
 import MyContext from '../context/MyContext';
-import About from "../components/pages/About.jsx"
+
 
 
 const LoginForm = () => {
     const context = useContext(MyContext);
-    const navigate = useNavigate()
     const {form, handleFormInput, handleFormSubmit, auth, USER} = context;
     const {user, password} = form;
     const logged = !auth ? (

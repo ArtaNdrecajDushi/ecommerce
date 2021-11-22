@@ -11,6 +11,10 @@ import Products from "../components/pages/Products";
 import ProductDetail from "../components/pages/ProductDetail";
 import NotFound from "../components/pages/NotFound";
 import Cart from "../components/Cart"
+import Checkout from "../components/Checkout"
+import OrderPlaced from "../components/OrderPlaced"
+
+
 
 const Routes = () => (
     <MyProvider>
@@ -23,6 +27,8 @@ const Routes = () => (
          <Route path="/products" element={<Products/>} />
          <Route path="/product-detail" element={<ProductDetail/>} />
          <Route path="/cart" element={<Cart/>} />
+         <Route path="/checkout" element={<Checkout/>} />
+         <Route path="/orderPlaced"element={<OrderPlaced />} />
 
         
          <Route path="*" element={<NotFound />} />

@@ -116,6 +116,98 @@ export const pastaData = [
     ],
   },
   {
+    id: 6,
+    category: "Pasta",
+    name: "Rotolo of spinach, squash & ricotta",
+    image:
+      "https://img.jamieoliver.com/jamieoliver/recipe-database/90246167.jpg?tr=w-800,h-1066",
+    price: 9.2,
+    ingredients: [
+      "450 g fresh egg pasta dough",
+      "½ a butternut squash",
+      "olive oil",
+      "1 teaspoon coriander seeds",
+      "1 teaspoon fennel seeds",
+      "½ a dried red chilli",
+      "1 handful of fresh marjoram , or oregano",
+      "2 cloves of garlic",
+      "800 g spinach",
+      "250 g unsalted butter",
+      "1 whole nutmeg , for grating",
+      "150 g crumbly ricotta cheese",
+      "50 g Parmesan cheese , plus extra for serving",
+      "20 fresh sage leaves",
+    ],
+  },
+  {
+    id: 7,
+    category: "Pasta",
+    name: "Joe Wicks' ravioli alla Napoletana",
+    image:
+      "https://img.jamieoliver.com/jamieoliver/recipe-database/117461949.jpg?tr=w-800,h-1066",
+    price: 9.2,
+    ingredients: [
+      "600 g Tipo ‘00’ flour , plus extra for dusting",
+      "18 large free-range eggs",
+      "semolina or rice flour , for dusting",
+      "2 slices of higher-welfare prosciutto",
+      "1 lemon",
+      "1 whole nutmeg , for grating",
+      "100 g Parmesan cheese",
+      "250 g Westcombe ricotta",
+      "2 cloves of garlic",
+      "olive oil",
+      "1 teaspoon dried chilli flakes",
+      "1 x 400 g tin of quality cherry tomatoes",
+      "½ a bunch of fresh basil , (15g)",
+      "50 g unsalted butter",
+      "1 lemon",
+      "50 g Parmesan cheese , plus extra for grating",
+      "extra virgin olive oil"
+    ],
+  },
+  {
+    id: 8,
+    category: "Pasta",
+    name: "Creamy prawn linguine",
+    image: "https://img.jamieoliver.com/jamieoliver/recipe-database/119338870.jpg?tr=w-800,h-1066",
+    price: 9.8,
+    ingredients: [
+      "150 g dried linguine",
+      "2 cloves of garlic",
+      "160 g raw peeled king prawns , from sustainable sources",
+      "4 rashers of higher-welfare smoked",
+      "pancetta",
+      "olive oil",
+      "50 ml Italian red wine",
+      "1 heaped tablespoon mascarpone cheese",
+      "50 g rocket",
+      "10 g Parmesan cheese"
+    ],
+  },
+  {
+    id: 9,
+    category: "Pasta",
+    name: "Mushroom & cauliflower penne",
+    image: "https://img.jamieoliver.com/jamieoliver/recipe-database/46325031.jpg?tr=w-800,h-1066",
+    price: 8.5,
+    ingredients: [
+      "2 cloves of garlic",
+      "1 onion",
+      "1 fresh red chilli",
+      "15 g fresh thyme",
+      "250 g chestnut mushrooms",
+      "320 g cauliflower",
+      "olive oil",
+      "200 g wholewheat penne",
+      "15 g fresh flat-leaf parsley",
+      "100 g ricotta cheese",
+      "1 lemon",
+      "20 g Parmesan cheese"
+    ],
+  },
+  
+  {
     id: 10,
     category: "Wine",
     name: "Pinot Noir",
@@ -153,10 +245,6 @@ export const pastaData = [
     name: "Cabernet Sauvignon",
     price: 60,
     about:
-      "One of the most famous wines globally, a good Cabernet Sauvignon is an incredibly versatile wine that goes with most dishes. Because there are so many varieties of the wine, you’ll want to be selective of the overtones and subtle notes. Primarily, a Cabernet Sauvignon will feature a warm, spiced flavor reminiscent of coffee, cedar, black currant, and vanilla. Some varieties will feature a robust stone-fruit undertone. A high-tannin wine, Cabernet Sauvignon has a bit of bitterness that is cut perfectly when paired with a tangy tomato sauce. Try a creamy tomato sauce for an exciting alternative to traditional marinara or Bolognese.",
-  },
-  {
-    PastaWine:
-      "Want to improve your Italian meal experience? Stop by Assaggio for incredible wine and mouthwatering pasta dishes. Call today for a reservation and get the best pasta-and-wine pairing for your tastes!",
-  },
+      "One of the most famous wines globally, a good Cabernet Sauvignon is an incredibly versatile wine that goes with most dishes. Because there are so many varieties of the wine, you’ll want to be selective of the overtones and subtle notes. Primarily, a Cabernet Sauvignon will feature a warm, spiced flavor reminiscent of coffee, cedar, black currant, and vanilla. Some varieties will feature a robust stone-fruit undertone. A high-tannin wine, Cabernet Sauvignon has a bit of bitterness that is cut perfectly when paired with a tangy tomato sauce. Try a creamy tomato sauce for an exciting alternative to traditional marinara or Bolognese."
+  }
 ];

@@ -1,23 +1,37 @@
 import {useNavigate, useLocation} from "react-router-dom"
+import MyContext from "../../context/MyContext"
+import {useContext} from "react"
 
 
 const ProductDetail = () => {
     const navigate = useNavigate()
     const location = useLocation()
-    const {name, image, ingredients} = location.state
+    const {name, image, ingredients, price} = location.state
+    const context = useContext(MyContext)
+    const {addToCart} = context
+    console.log(location.state)
    
     return (
-        <div>
+      <main>
+        <div className="background-image details-page">
+          <div>
             <p>{name}</p>
-            <img src={image}/>
+            <img className="product-detail-image" src={image} alt=""/>
+            </div>
+            <aside className="details-aside">
+            <p>€{price}</p>
             <h2>Ingredients</h2>
           {ingredients.map((ingredient) => (
             <p>{ingredient}</p>
           ))}
-          <button onClick={() => navigate(-1)}>
+          </aside>
+          </div>
+           <button className="details-button2" onClick={() => addToCart(location.state)}>Add to cart</button> 
+          <button className="details-button" onClick={() => navigate(-1)}>
         Return
       </button>
-        </div>
+      </main>
+       
     )
 }
 

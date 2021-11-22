@@ -1,7 +1,4 @@
 import {useState} from "react"
-
-import { pastaData } from "../data/pasta-data";
-
 import MyContext from "./MyContext"
 
 const MyProvider = (props) => {
@@ -81,7 +78,7 @@ const MyProvider = (props) => {
 
 
     return (
-        <MyContext.Provider value={{handleFormSubmit, handleFormInput, form,auth, addToCart, removePasta, totalPerProduct, grandTotal, reduceQuantity, cartItems, category, setCategory, USER}}>
+        <MyContext.Provider value={{handleFormSubmit, handleFormInput, form,auth, addToCart, removePasta, totalPerProduct, grandTotal, reduceQuantity, cartItems, category, setCategory, USER, setCartItems}}>
             {props.children}
         </MyContext.Provider>
     )
