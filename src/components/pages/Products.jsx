@@ -14,6 +14,7 @@ const Products = () => {
 
   
   const pastaItems = pastaData.map((item) => {
+   
     if (category === "Pasta" && item.category === "Pasta") {
       return (
         <li className="pasta-structure" key={item.id}>
@@ -35,7 +36,7 @@ const Products = () => {
           <button className="wine-add-button" onClick={() => addToCart(item)}>Add to cart</button>
         </li>
       );
-    } return
+    } return null
   });
   return (
     <section className="background-image products-background-image">

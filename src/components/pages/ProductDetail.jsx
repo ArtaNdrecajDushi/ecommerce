@@ -21,8 +21,8 @@ const ProductDetail = () => {
             <aside className="details-aside">
             <p>€{price}</p>
             <h2>Ingredients</h2>
-          {ingredients.map((ingredient) => (
-            <p>{ingredient}</p>
+          {ingredients.map((ingredient, index) => (
+            <p key={index}>{ingredient}</p>
           ))}
           </aside>
           </div>

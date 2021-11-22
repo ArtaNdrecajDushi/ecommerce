@@ -6,13 +6,9 @@ import MyContext from "../context/MyContext"
 
 const Nav = () => {
     const context = useContext(MyContext);
-    const { auth, cartItems, setCategory} = context
+    const { auth, cartItems, setCategory } = context
     const [isActive, setIsActive] = useState(false)
     const categories = ["Wine", "Pasta"]
-    // function test(e) {
-    //     let value = e.value
-    //     console.log(value)
-    // }
     return (
         <nav>
             <ul>
@@ -40,8 +36,9 @@ const Nav = () => {
                             Choose category
                     </button>
                         <div className={isActive ? "dropdown-menu show" : "dropdown-menu"}>
-                            {categories.map((element) => {
+                            {categories.map((element, index) => {
                                 return (
+<div key={index}>
                                     <Link to="/products"
                                         onClick={() => {
                                             setCategory(element)
@@ -53,7 +50,9 @@ const Nav = () => {
                                     >
                                         {element}
                                     </Link>
+                                    </div>
                                 );
+
                             })}
                         </div>
                     </div>
@@ -68,13 +67,13 @@ const Nav = () => {
                             <li>Cart <span>{cartItems.length}</span></li>
                         </NavLink>
 
-                        <NavLink 
-                         to="/checkout"
-                         style={({ isActive }) => {
-                             return { color: isActive && "green" }
-                         }}>
-                         <li>Checkout</li>
-                         </NavLink>
+                        <NavLink
+                            to="/checkout"
+                            style={({ isActive }) => {
+                                return { color: isActive && "green" }
+                            }}>
+                            <li>Checkout</li>
+                        </NavLink>
 
                     </>
                 )

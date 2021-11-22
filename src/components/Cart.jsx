@@ -23,7 +23,7 @@ const Cart = () => {
 
   const pastaList = cartItems.map((pastaData, index) => {
     return (
-      <div>
+      <div key={index}>
         <aside className="cart-line" key={pastaData.id} >
           <img className="product-image" src={pastaData.image} alt={pastaData.name} />
           <aside className='cart-text'>
