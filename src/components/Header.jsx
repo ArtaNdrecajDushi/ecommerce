@@ -21,22 +21,22 @@ const Header = () => {
         
         
       </div>
-      <div class="share">
-  <div class="share__parent">
+      <div className="share">
+  <div className="share__parent">
   <BsFillShareFill />
   </div>
   <a href="#">
-    <div class="share__button share__facebook">
+    <div className="share__button share__facebook">
     <BsInstagram />
     </div>
   </a>
   <a href="#">
-    <div class="share__button share__linkedin">
+    <div className="share__button share__linkedin">
     <AiFillFacebook />
     </div>
   </a>
   <a href="#">
-    <div class="share__button share__twitter">
+    <div className="share__button share__twitter">
     <FaTripadvisor />
     </div>
   </a>

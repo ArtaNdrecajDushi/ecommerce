@@ -6,7 +6,7 @@ const MyProvider = (props) => {
     const PASSWORD=process.env.REACT_APP_PASSWORD
 
     const [form, setForm] = useState({user:"", password:""})
-    const [auth, setAuth] = useState(true)
+    const [auth, setAuth] = useState(false)
 
     const [cartItems, setCartItems] = useState([])
                   
