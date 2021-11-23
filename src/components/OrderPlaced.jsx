@@ -14,8 +14,8 @@ const OrderPlaced = () => {
   return (
     <main>
       <section className='orders-placed background-image'>
-        <p>Order Placed</p>
-        <button onClick={() => navigate('/products', { replace: true })}>
+        <p className="order-placed-button">Order Placed</p>
+        <button className="carry-on-shopping-button" onClick={() => navigate('/products', { replace: true })}>
           Carry on shopping
         </button>
       </section>

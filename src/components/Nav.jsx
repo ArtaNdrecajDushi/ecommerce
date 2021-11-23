@@ -38,18 +38,18 @@ const Nav = () => {
                         <div className={isActive ? "dropdown-menu show" : "dropdown-menu"}>
                             {categories.map((element, index) => {
                                 return (
-<div key={index}>
-                                    <Link to="/products"
-                                        onClick={() => {
-                                            setCategory(element)
-                                            setIsActive(false)
+                                    <div key={index}>
+                                        <Link to="/products"
+                                            onClick={() => {
+                                                setCategory(element)
+                                                setIsActive(false)
 
-                                        }}
-                                        href="#"
-                                        className="dropdown-item"
-                                    >
-                                        {element}
-                                    </Link>
+                                            }}
+                                            href="#"
+                                            className="dropdown-item"
+                                        >
+                                            {element}
+                                        </Link>
                                     </div>
                                 );
 

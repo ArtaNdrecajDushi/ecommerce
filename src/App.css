@@ -571,7 +571,7 @@ footer p {
 }
 
 .place-order{
-  width:100px;
+  width:150px;
 }
 
 .wine-add-button{
@@ -581,6 +581,15 @@ footer p {
 
 .dropdown{
   margin-left: 10px;
+}
+
+.order-placed-button{
+  color:whitesmoke;
+  letter-spacing: 2px;
+}
+
+.carry-on-shopping-button{
+  width:200px;
 }
 
 

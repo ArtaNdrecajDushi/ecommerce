@@ -37,7 +37,7 @@ const Checkout = () => {
         <button
           className='remove-button'
           onClick={() => removePasta(pastaData)}>
-          Remove pasta
+          Remove item
         </button>
       </aside>
     );
@@ -49,7 +49,7 @@ const Checkout = () => {
       <section className="cart-page background-image">
         {pastaList}
         <aside className='checkout-aside'>
-          <h4>Shipping free</h4>
+          {/* <h4>Shipping free</h4> */}
           <p>
             Grand Total <span>€{grandTotalAll.toFixed(2)}</span>
           </p>
